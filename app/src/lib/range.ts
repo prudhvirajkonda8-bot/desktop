@@ -3,10 +3,10 @@
 
 export function range(
   start: number,
-  stop: number,
+  stop?: number | null,
   step?: number
 ): ReadonlyArray<number> {
-  if (stop === null) {
+  if (stop == null) {
     stop = start || 0
     start = 0
   }
